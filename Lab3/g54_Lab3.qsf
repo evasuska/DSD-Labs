@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C20F484C7
-set_global_assignment -name TOP_LEVEL_ENTITY g54_stack52BLOCK
+set_global_assignment -name TOP_LEVEL_ENTITY g54_Modulus13
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:19:15  FEBRUARY 20, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -64,6 +64,12 @@ set_global_assignment -name QIP_FILE ../g54_Lab2/lpm_constant1.qip
 set_global_assignment -name QIP_FILE ../g54_Lab2/lpm_constant2.qip
 set_global_assignment -name BDF_FILE g54_stack5BLOCK.bdf
 set_global_assignment -name BDF_FILE g54_stack52BLOCK.bdf
+set_global_assignment -name VHDL_FILE ../Lab1/Comparator/g54_comp6Block.vhd
+set_global_assignment -name VHDL_FILE ../Lab1/Comparator/g54_comp6.vhd
+set_global_assignment -name VHDL_FILE "../Lab2/pop enable/g54_pop_enable.vhd"
+set_global_assignment -name SOURCE_FILE "../Lab2/pop enable/g54_pop_enable.mif.bak"
+set_global_assignment -name MIF_FILE "../Lab2/pop enable/g54_pop_enable.mif"
+set_global_assignment -name VHDL_FILE g54_Modulus13.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
