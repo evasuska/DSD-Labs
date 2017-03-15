@@ -23,7 +23,7 @@ lpm_widthad => 6, -- sets the width of the ROM address bus
 lpm_numwords => 64, -- sets the number of words stored in the ROM
 lpm_outdata => "UNREGISTERED", -- no register on the output
 lpm_address_control => "REGISTERED", -- register on the input
-lpm_file => "P:\DSD Lab\g54_Lab2\g54_pop_enable.mif", -- the ascii file containing the ROM data
+lpm_file => "P:\DSD-Labs\g54_Lab3\g54_pop_enable.mif", -- the ascii file containing the ROM data
 lpm_width => 52) -- the width of the word stored in each ROM location
 PORT MAP(inclock => clk, address => N, q => P_EN);
 

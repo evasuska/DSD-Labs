@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version"
 
-// DATE "03/15/2017 17:52:20"
+// DATE "03/15/2017 18:08:10"
 
 // 
 // Device: Altera EP2C20F484C7 Package FBGA484
@@ -3871,9 +3871,9 @@ cycloneii_ram_block \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_bl
 // synopsys translate_off
 defparam \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .data_interleave_offset_in_bits = 1;
 defparam \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .data_interleave_width_in_bits = 1;
-defparam \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .init_file = "P:\DSD Lab\g54_Lab2\g54_pop_enable.mif";
+defparam \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .init_file = "P:\DSD-Labs\g54_Lab3\g54_pop_enable.mif";
 defparam \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .init_file_layout = "port_a";
-defparam \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .logical_ram_name = "g54_stack52:inst2|g54_pop_enable:inst28|lpm_rom:crc_table|altrom:srom|altsyncram:rom_block|altsyncram_kg21:auto_generated|ALTSYNCRAM";
+defparam \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .logical_ram_name = "g54_stack52:inst2|g54_pop_enable:inst28|lpm_rom:crc_table|altrom:srom|altsyncram:rom_block|altsyncram_lk21:auto_generated|ALTSYNCRAM";
 defparam \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .operation_mode = "rom";
 defparam \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_address_clear = "none";
 defparam \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_address_width = 6;
@@ -14256,9 +14256,9 @@ cycloneii_ram_block \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_bl
 // synopsys translate_off
 defparam \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .data_interleave_offset_in_bits = 1;
 defparam \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
-defparam \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .init_file = "P:\DSD Lab\g54_Lab2\g54_pop_enable.mif";
+defparam \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .init_file = "P:\DSD-Labs\g54_Lab3\g54_pop_enable.mif";
 defparam \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .init_file_layout = "port_a";
-defparam \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .logical_ram_name = "g54_stack52:inst2|g54_pop_enable:inst28|lpm_rom:crc_table|altrom:srom|altsyncram:rom_block|altsyncram_kg21:auto_generated|ALTSYNCRAM";
+defparam \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .logical_ram_name = "g54_stack52:inst2|g54_pop_enable:inst28|lpm_rom:crc_table|altrom:srom|altsyncram:rom_block|altsyncram_lk21:auto_generated|ALTSYNCRAM";
 defparam \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .operation_mode = "rom";
 defparam \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_address_clear = "none";
 defparam \inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_address_width = 6;
