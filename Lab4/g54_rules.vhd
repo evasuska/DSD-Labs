@@ -12,7 +12,9 @@ USE ieee.numeric_std.all;
 entity g54_rules is
 port ( play_pile_top_card : in std_logic_vector(5 downto 0);
 		card_to_play : in std_logic_vector(5 downto 0);
-		legal_play : out std_logic); 
+		legal_play : out std_logic;
+		top_card_value_OUT : out std_LOGIC_vector(3 downto 0);
+		card_to_play_value_OUT : out std_LOGIC_vector(3 downto 0)); 
 end g54_rules;
 
 architecture rules of g54_rules is 
@@ -29,10 +31,13 @@ SIGNAL card_to_play_suit : std_logic_vector(3 downto 0);
 SIGNAL card_to_play_value : std_logic_vector(3 downto 0);
 SIGNAL top_card_suit : std_logic_vector(3 downto 0);
 SIGNAL top_card_value : std_logic_vector(3 downto 0);
-SIGNAL top_card_value_int : integer;
-SIGNAL card_to_play_value_int : integer;
+--SIGNAL top_card_value_int : integer;
+--SIGNAL card_to_play_value_int : integer;
 
 BEGIN
+
+	top_card_value_OUT <= top_card_value;
+	card_to_play_value_OUT <= card_to_play_value;
 
 	mod_floor_13_inst1 : g54_MOD
 		PORT MAP(
@@ -45,19 +50,18 @@ BEGIN
 			input (5 DOWNTO 0) => card_to_play (5 DOWNTO 0),
 			floor_out => card_to_play_suit,
 			mod_out => card_to_play_value);
-			
-			card_to_play_value_int <= to_integer(unsigned(card_to_play_value)) + 1;
-			top_card_value_int <= to_integer(unsigned(top_card_value)) + 1;
+		
 
 			PROCESS(play_pile_top_card, card_to_play)
 			begin
-				if (card_to_play_value_int = top_card_value_int) then
+			
+				if (card_to_play_value = top_card_value) then
 					legal_play <= '1';
 				elsif (card_to_play_suit = top_card_suit) then
 					legal_play <= '1';
-				elsif (card_to_play_value_int = 8) then
+				elsif (card_to_play_value = "0111") then
 					legal_play <= '1';
-				elsif (top_card_value_int = 8) then
+				elsif (top_card_value = "0111") then
 					legal_play <= '1';
 				else
 					legal_play <= '0';
