@@ -12,9 +12,7 @@ USE ieee.numeric_std.all;
 entity g54_rules is
 port ( play_pile_top_card : in std_logic_vector(5 downto 0);
 		card_to_play : in std_logic_vector(5 downto 0);
-		legal_play : out std_logic;
-		top_card_value_OUT : out std_LOGIC_vector(3 downto 0);
-		card_to_play_value_OUT : out std_LOGIC_vector(3 downto 0)); 
+		legal_play : out std_logic);
 end g54_rules;
 
 architecture rules of g54_rules is 
@@ -31,13 +29,7 @@ SIGNAL card_to_play_suit : std_logic_vector(3 downto 0);
 SIGNAL card_to_play_value : std_logic_vector(3 downto 0);
 SIGNAL top_card_suit : std_logic_vector(3 downto 0);
 SIGNAL top_card_value : std_logic_vector(3 downto 0);
---SIGNAL top_card_value_int : integer;
---SIGNAL card_to_play_value_int : integer;
-
 BEGIN
-
-	top_card_value_OUT <= top_card_value;
-	card_to_play_value_OUT <= card_to_play_value;
 
 	mod_floor_13_inst1 : g54_MOD
 		PORT MAP(
@@ -54,7 +46,6 @@ BEGIN
 
 			PROCESS(play_pile_top_card, card_to_play)
 			begin
-			
 				if (card_to_play_value = top_card_value) then
 					legal_play <= '1';
 				elsif (card_to_play_suit = top_card_suit) then
@@ -67,6 +58,6 @@ BEGIN
 					legal_play <= '0';
 				end if;
 
-END PROCESS;
+			END PROCESS;
 
 END rules;
