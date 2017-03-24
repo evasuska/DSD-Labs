@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C20F484C7
-set_global_assignment -name TOP_LEVEL_ENTITY g54_DealerFSM
+set_global_assignment -name TOP_LEVEL_ENTITY g54_rules
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:23:39  MARCH 22, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -52,15 +52,81 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "P:/DSD-Labs/Lab4/g54_Dealer_FSM_Sim.vwf"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name QIP_FILE lpm_STACKCOUNTER.qip
+set_global_assignment -name QIP_FILE lpm_pulseOutputCounter.qip
+set_global_assignment -name QIP_FILE lpm_mux2.qip
+set_global_assignment -name QIP_FILE lpm_mux1.qip
+set_global_assignment -name QIP_FILE lpm_mux0.qip
+set_global_assignment -name QIP_FILE lpm_decode0.qip
+set_global_assignment -name QIP_FILE lpm_counterSTACK.qip
+set_global_assignment -name QIP_FILE lpm_counterPulseOUTPUT.qip
+set_global_assignment -name QIP_FILE lpm_counterPulse.qip
+set_global_assignment -name QIP_FILE lpm_counter2.qip
+set_global_assignment -name QIP_FILE lpm_counter1.qip
+set_global_assignment -name QIP_FILE lpm_counter0.qip
+set_global_assignment -name QIP_FILE lpm_constantMODE1.qip
+set_global_assignment -name QIP_FILE lpm_constantMODE0.qip
+set_global_assignment -name QIP_FILE lpm_constantDATAIN.qip
+set_global_assignment -name QIP_FILE lpm_constant3.qip
+set_global_assignment -name QIP_FILE lpm_constant2.qip
+set_global_assignment -name QIP_FILE lpm_constant1.qip
+set_global_assignment -name BSF_FILE lpm_constant0_lpm_constant_s09.bsf
+set_global_assignment -name SOURCE_FILE lpm_constant0.vhd.bak
+set_global_assignment -name QIP_FILE lpm_constant0.qip
+set_global_assignment -name QIP_FILE lpm_compareZERO.qip
+set_global_assignment -name QIP_FILE lpm_compareONE.qip
+set_global_assignment -name QIP_FILE lpm_compareFULL.qip
+set_global_assignment -name QIP_FILE lpm_compareFFpulse.qip
+set_global_assignment -name QIP_FILE lpm_compareEMPTY.qip
+set_global_assignment -name QIP_FILE lpm_compare6.qip
+set_global_assignment -name QIP_FILE lpm_compare1.qip
+set_global_assignment -name QIP_FILE lpm_compare0.qip
+set_global_assignment -name VHDL_FILE g54_stack52.vhd
+set_global_assignment -name BDF_FILE Lab4_testbed2.bdf
+set_global_assignment -name VHDL_FILE lpm_STACKCOUNTER.vhd
+set_global_assignment -name VHDL_FILE lpm_pulseOutputCounter.vhd
+set_global_assignment -name VHDL_FILE lpm_mux2.vhd
+set_global_assignment -name VHDL_FILE lpm_mux1.vhd
+set_global_assignment -name VHDL_FILE lpm_mux0.vhd
+set_global_assignment -name VHDL_FILE lpm_decode0.vhd
+set_global_assignment -name VHDL_FILE lpm_counterSTACK.vhd
+set_global_assignment -name VHDL_FILE lpm_counterPulseOUTPUT.vhd
+set_global_assignment -name VHDL_FILE lpm_counterPulse.vhd
+set_global_assignment -name VHDL_FILE lpm_counter2.vhd
+set_global_assignment -name VHDL_FILE lpm_counter1.vhd
+set_global_assignment -name VHDL_FILE lpm_counter0.vhd
+set_global_assignment -name VHDL_FILE lpm_constantMODE1.vhd
+set_global_assignment -name VHDL_FILE lpm_constantMODE0.vhd
+set_global_assignment -name VHDL_FILE lpm_constantDATAIN.vhd
+set_global_assignment -name VHDL_FILE lpm_constant3.vhd
+set_global_assignment -name VHDL_FILE lpm_constant2.vhd
+set_global_assignment -name VHDL_FILE lpm_constant1.vhd
+set_global_assignment -name VHDL_FILE lpm_constant0.vhd
+set_global_assignment -name VHDL_FILE lpm_compareZERO.vhd
+set_global_assignment -name VHDL_FILE lpm_compareONE.vhd
+set_global_assignment -name VHDL_FILE lpm_compareFULL.vhd
+set_global_assignment -name VHDL_FILE lpm_compareFFpulse.vhd
+set_global_assignment -name VHDL_FILE lpm_compareEMPTY.vhd
+set_global_assignment -name VHDL_FILE lpm_compare6.vhd
+set_global_assignment -name VHDL_FILE lpm_compare1.vhd
+set_global_assignment -name VHDL_FILE lpm_compare0.vhd
+set_global_assignment -name VHDL_FILE lpm_ButtonCounter.vhd
+set_global_assignment -name VHDL_FILE g54_MOD.vhd
+set_global_assignment -name VHDL_FILE g54_RANDU.vhd
+set_global_assignment -name BDF_FILE g54_stack52BLOCK.bdf
+set_global_assignment -name BDF_FILE g54_pulseGen.bdf
+set_global_assignment -name BDF_FILE g54_7_segment_decoder_BLOCK.bdf
+set_global_assignment -name VHDL_FILE g54_7_segment_decoder.vhd
+set_global_assignment -name VHDL_FILE g48_counter.vhd
 set_global_assignment -name BSF_FILE g54_DealerFSM.bsf
-set_global_assignment -name BDF_FILE g54_lab4_testbed.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE g54_Dealer_FSM_Sim.vwf
 set_global_assignment -name VHDL_FILE g54_rules.vhd
 set_global_assignment -name BDF_FILE rules.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Rule_Waveform2.vwf
 set_global_assignment -name VHDL_FILE g54_DealerFSM.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "P:/DSD-Labs/Lab4/g54_Dealer_FSM_Sim.vwf"
