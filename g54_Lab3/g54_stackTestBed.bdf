@@ -550,7 +550,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 168 408 344 504)
+	(rect 168 440 344 536)
 	(text "g54_pulseGen" (rect 5 0 87 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
@@ -693,19 +693,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 72 456)
-	(pt 168 456)
-)
-(connector
-	(text "RST" (rect 152 424 173 436)(font "Arial" ))
-	(pt 168 440)
-	(pt 144 440)
-)
-(connector
-	(pt 344 440)
-	(pt 360 440)
-)
-(connector
 	(pt 360 296)
 	(pt 384 296)
 )
@@ -773,24 +760,8 @@ applicable agreement for further details.
 	(pt 160 32)
 )
 (connector
-	(pt 360 296)
-	(pt 360 440)
-)
-(connector
-	(pt 360 440)
-	(pt 360 472)
-)
-(connector
 	(pt 128 512)
 	(pt 152 512)
-)
-(connector
-	(pt 152 512)
-	(pt 152 472)
-)
-(connector
-	(pt 152 472)
-	(pt 168 472)
 )
 (connector
 	(pt 80 512)
@@ -827,10 +798,43 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
+	(pt 160 456)
+	(pt 160 488)
+)
+(connector
+	(pt 72 456)
+	(pt 160 456)
+)
+(connector
+	(pt 160 488)
+	(pt 168 488)
+)
+(connector
+	(text "RST" (rect 152 456 173 468)(font "Arial" ))
+	(pt 168 472)
+	(pt 144 472)
+)
+(connector
+	(pt 152 512)
+	(pt 152 504)
+)
+(connector
+	(pt 152 504)
+	(pt 168 504)
+)
+(connector
+	(pt 360 296)
+	(pt 360 472)
+)
+(connector
+	(pt 344 472)
+	(pt 360 472)
+)
+(connector
 	(pt 360 472)
 	(pt 456 472)
 )
 (junction (pt 848 192))
 (junction (pt 848 352))
 (junction (pt 592 280))
-(junction (pt 360 440))
+(junction (pt 360 472))
