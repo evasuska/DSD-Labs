@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C20F484C7
-set_global_assignment -name TOP_LEVEL_ENTITY "g54_Lab4-3_TESTBED"
+set_global_assignment -name TOP_LEVEL_ENTITY g54_rules
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:19:15  FEBRUARY 20, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -129,7 +129,6 @@ set_global_assignment -name QIP_FILE lpm_constant2.qip
 set_global_assignment -name QIP_FILE lpm_constant1.qip
 set_global_assignment -name QIP_FILE lpm_constant0.qip
 set_global_assignment -name VHDL_FILE g54_pop_enable.vhd
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "P:/DSD-Labs/g54_Lab3/TestBed-PulseGen.vwf"
 set_global_assignment -name ENABLE_SIGNALTAP ON
 set_global_assignment -name USE_SIGNALTAP_FILE output_files/g54_stack52_testbed.stp
 set_global_assignment -name SIGNALTAP_FILE output_files/stp1.stp
@@ -142,6 +141,8 @@ set_global_assignment -name BDF_FILE "g54_Lab4-3_TESTBED.bdf"
 set_global_assignment -name VHDL_FILE add16.vhd
 set_global_assignment -name VHDL_FILE add31.vhd
 set_global_assignment -name QIP_FILE lpm_compareRandlength.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE "Lab4-3_TESTBEDWAVE.vwf"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "P:/DSD-Labs/g54_Lab3/Lab4-3_TESTBEDWAVE.vwf"
 set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
