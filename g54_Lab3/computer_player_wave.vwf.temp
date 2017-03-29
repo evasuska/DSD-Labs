@@ -1,3 +1,4 @@
+/* Simulator = Quartus II Simulator */
 /*
 WARNING: Do NOT edit the input and output ports in this file in a text
 editor if you plan to continue editing the block that represents it in
@@ -26,7 +27,7 @@ HEADER
 	TIME_UNIT = ns;
 	DATA_OFFSET = 0.0;
 	DATA_DURATION = 1000.0;
-	SIMULATION_TIME = 1000.0;
+	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 10.0;
 	GRID_DUTY_CYCLE = 50;
@@ -102,16 +103,6 @@ SIGNAL("TURN")
 	PARENT = "";
 }
 
-SIGNAL("altera_reserved_tdo")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
 TRANSITION_LIST("Clk")
 {
 	NODE
@@ -131,11 +122,7 @@ TRANSITION_LIST("DONE_TURN")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 216.551;
-		LEVEL 1 FOR 269.97;
-		LEVEL 0 FOR 350.03;
-		LEVEL 1 FOR 119.97;
-		LEVEL 0 FOR 43.479;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -166,9 +153,7 @@ TRANSITION_LIST("POP")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 196.551;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 783.449;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -177,9 +162,7 @@ TRANSITION_LIST("PUSH")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 816.531;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 163.469;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -193,15 +176,6 @@ TRANSITION_LIST("TURN")
 		LEVEL 0 FOR 180.0;
 		LEVEL 1 FOR 290.0;
 		LEVEL 0 FOR 50.0;
-	}
-}
-
-TRANSITION_LIST("altera_reserved_tdo")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -265,15 +239,6 @@ DISPLAY_LINE
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "altera_reserved_tdo";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 7;
 	TREE_LEVEL = 0;
 }
 
