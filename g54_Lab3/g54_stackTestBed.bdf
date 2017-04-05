@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect -96 448 72 464)
+	(rect -184 480 -16 496)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "clk" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
@@ -108,7 +108,7 @@ applicable agreement for further details.
 	(input)
 	(rect 72 304 240 320)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "DATA[5..0]" (rect 5 0 60 12)(font "Arial" ))
+	(text "DATA[5..0]" (rect 5 0 59 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -122,9 +122,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 160 344 328 360)
+	(rect -360 376 -192 392)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "deal_en" (rect 5 0 43 12)(font "Arial" ))
+	(text "deal_en" (rect 5 0 42 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -140,7 +140,7 @@ applicable agreement for further details.
 	(input)
 	(rect 48 384 216 400)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "play_en" (rect 5 0 44 12)(font "Arial" ))
+	(text "play_en" (rect 5 0 43 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -695,6 +695,42 @@ applicable agreement for further details.
 		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36))
 	)
 )
+(symbol
+	(rect -128 320 48 416)
+	(text "g54_pulseGen" (rect 5 0 87 14)(font "Arial" (font_size 8)))
+	(text "inst3" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "RST" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "RST" (rect 21 27 44 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "clk" (rect 21 43 36 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "buttonPush" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "buttonPush" (rect 21 59 84 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 176 32)
+		(output)
+		(text "enable_out" (rect 0 0 62 14)(font "Arial" (font_size 8)))
+		(text "enable_out" (rect 93 27 155 41)(font "Arial" (font_size 8)))
+		(line (pt 176 32)(pt 160 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 160 80))
+	)
+)
 (connector
 	(pt 1088 352)
 	(pt 1152 352)
@@ -879,19 +915,7 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 160 456)
-	(pt 160 488)
-)
-(connector
-	(pt 72 456)
-	(pt 160 456)
-)
-(connector
-	(pt 160 488)
-	(pt 168 488)
-)
-(connector
-	(text "RST" (rect 152 456 173 468)(font "Arial" ))
+	(text "RST" (rect 120 456 141 468)(font "Arial" ))
 	(pt 168 472)
 	(pt 144 472)
 )
@@ -964,10 +988,46 @@ applicable agreement for further details.
 	(pt 344 352)
 )
 (connector
+	(text "clk" (rect 78 472 92 484)(font "Arial" ))
+	(pt -16 488)
+	(pt 168 488)
+)
+(connector
+	(text "clk" (rect -182 360 -168 372)(font "Arial" ))
+	(pt -128 368)
+	(pt -160 368)
+)
+(connector
+	(text "RST" (rect -234 336 -213 348)(font "Arial" ))
+	(pt -128 352)
+	(pt -272 352)
+)
+(connector
+	(pt 72 352)
 	(pt 344 352)
-	(pt 328 352)
+)
+(connector
+	(pt 72 440)
+	(pt 72 352)
+)
+(connector
+	(pt 72 440)
+	(pt -152 440)
+)
+(connector
+	(pt -152 440)
+	(pt -152 384)
+)
+(connector
+	(pt -192 384)
+	(pt -152 384)
+)
+(connector
+	(pt -152 384)
+	(pt -128 384)
 )
 (junction (pt 848 192))
 (junction (pt 848 352))
 (junction (pt 592 280))
 (junction (pt 376 472))
+(junction (pt -152 384))

@@ -45,14 +45,14 @@ ENTITY dealCounter IS
 		aset		: IN STD_LOGIC ;
 		clock		: IN STD_LOGIC ;
 		cnt_en		: IN STD_LOGIC ;
-		q		: OUT STD_LOGIC_VECTOR (3 DOWNTO 0)
+		q		: OUT STD_LOGIC_VECTOR (2 DOWNTO 0)
 	);
 END dealCounter;
 
 
 ARCHITECTURE SYN OF dealcounter IS
 
-	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (3 DOWNTO 0);
+	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (2 DOWNTO 0);
 
 
 
@@ -68,12 +68,12 @@ ARCHITECTURE SYN OF dealcounter IS
 			aset	: IN STD_LOGIC ;
 			clock	: IN STD_LOGIC ;
 			cnt_en	: IN STD_LOGIC ;
-			q	: OUT STD_LOGIC_VECTOR (3 DOWNTO 0)
+			q	: OUT STD_LOGIC_VECTOR (2 DOWNTO 0)
 	);
 	END COMPONENT;
 
 BEGIN
-	q    <= sub_wire0(3 DOWNTO 0);
+	q    <= sub_wire0(2 DOWNTO 0);
 
 	LPM_COUNTER_component : LPM_COUNTER
 	GENERIC MAP (
@@ -81,7 +81,7 @@ BEGIN
 		lpm_direction => "UP",
 		lpm_port_updown => "PORT_UNUSED",
 		lpm_type => "LPM_COUNTER",
-		lpm_width => 4
+		lpm_width => 3
 	)
 	PORT MAP (
 		aset => aset,
@@ -114,25 +114,25 @@ END SYN;
 -- Retrieval info: PRIVATE: SSET NUMERIC "0"
 -- Retrieval info: PRIVATE: SSET_ALL1 NUMERIC "1"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
--- Retrieval info: PRIVATE: nBit NUMERIC "4"
+-- Retrieval info: PRIVATE: nBit NUMERIC "3"
 -- Retrieval info: PRIVATE: new_diagram STRING "1"
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: CONSTANT: LPM_AVALUE STRING "0"
 -- Retrieval info: CONSTANT: LPM_DIRECTION STRING "UP"
 -- Retrieval info: CONSTANT: LPM_PORT_UPDOWN STRING "PORT_UNUSED"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COUNTER"
--- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "4"
+-- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "3"
 -- Retrieval info: USED_PORT: aset 0 0 0 0 INPUT NODEFVAL "aset"
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL "clock"
 -- Retrieval info: USED_PORT: cnt_en 0 0 0 0 INPUT NODEFVAL "cnt_en"
--- Retrieval info: USED_PORT: q 0 0 4 0 OUTPUT NODEFVAL "q[3..0]"
+-- Retrieval info: USED_PORT: q 0 0 3 0 OUTPUT NODEFVAL "q[2..0]"
 -- Retrieval info: CONNECT: @aset 0 0 0 0 aset 0 0 0 0
 -- Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
 -- Retrieval info: CONNECT: @cnt_en 0 0 0 0 cnt_en 0 0 0 0
--- Retrieval info: CONNECT: q 0 0 4 0 @q 0 0 4 0
+-- Retrieval info: CONNECT: q 0 0 3 0 @q 0 0 3 0
 -- Retrieval info: GEN_FILE: TYPE_NORMAL dealCounter.vhd TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL dealCounter.inc FALSE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL dealCounter.cmp TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL dealCounter.bsf TRUE FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL dealCounter.bsf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL dealCounter_inst.vhd FALSE
 -- Retrieval info: LIB_FILE: lpm

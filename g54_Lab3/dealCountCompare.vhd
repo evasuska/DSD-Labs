@@ -71,7 +71,7 @@ ARCHITECTURE SYN OF dealcountcompare IS
 	END COMPONENT;
 
 BEGIN
-	sub_wire1_bv(3 DOWNTO 0) <= "1111";
+	sub_wire1_bv(3 DOWNTO 0) <= "0111";
 	sub_wire1    <= To_stdlogicvector(sub_wire1_bv);
 	aeb    <= sub_wire0;
 
@@ -104,7 +104,7 @@ END SYN;
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone II"
 -- Retrieval info: PRIVATE: LPM_PIPELINE NUMERIC "0"
 -- Retrieval info: PRIVATE: Latency NUMERIC "0"
--- Retrieval info: PRIVATE: PortBValue NUMERIC "15"
+-- Retrieval info: PRIVATE: PortBValue NUMERIC "7"
 -- Retrieval info: PRIVATE: Radix NUMERIC "10"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: SignedCompare NUMERIC "0"
@@ -121,11 +121,11 @@ END SYN;
 -- Retrieval info: USED_PORT: aeb 0 0 0 0 OUTPUT NODEFVAL "aeb"
 -- Retrieval info: USED_PORT: dataa 0 0 4 0 INPUT NODEFVAL "dataa[3..0]"
 -- Retrieval info: CONNECT: @dataa 0 0 4 0 dataa 0 0 4 0
--- Retrieval info: CONNECT: @datab 0 0 4 0 15 0 0 4 0
+-- Retrieval info: CONNECT: @datab 0 0 4 0 7 0 0 4 0
 -- Retrieval info: CONNECT: aeb 0 0 0 0 @aeb 0 0 0 0
 -- Retrieval info: GEN_FILE: TYPE_NORMAL dealCountCompare.vhd TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL dealCountCompare.inc FALSE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL dealCountCompare.cmp TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL dealCountCompare.bsf TRUE FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL dealCountCompare.bsf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL dealCountCompare_inst.vhd FALSE
 -- Retrieval info: LIB_FILE: lpm

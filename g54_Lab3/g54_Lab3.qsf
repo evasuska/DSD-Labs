@@ -90,38 +90,8 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE "TestBed-PulseGen.vwf"
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name QIP_FILE lpm_STACKCOUNTER.qip
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
-set_location_assignment PIN_L21 -to mode[1]
-set_location_assignment PIN_L22 -to mode[0]
-set_location_assignment PIN_V12 -to ADDR[0]
-set_location_assignment PIN_W12 -to ADDR[1]
-set_location_assignment PIN_U12 -to ADDR[2]
-set_location_assignment PIN_U11 -to ADDR[3]
-set_location_assignment PIN_M2 -to ADDR[4]
-set_location_assignment PIN_M1 -to ADDR[5]
-set_location_assignment PIN_L1 -to clk
-set_location_assignment PIN_J2 -to Output1[0]
-set_location_assignment PIN_J1 -to Output1[1]
-set_location_assignment PIN_H2 -to Output1[2]
-set_location_assignment PIN_H1 -to Output1[3]
-set_location_assignment PIN_F2 -to Output1[4]
-set_location_assignment PIN_F1 -to Output1[5]
-set_location_assignment PIN_E2 -to Output1[6]
-set_location_assignment PIN_E1 -to Output2[0]
-set_location_assignment PIN_H6 -to Output2[1]
-set_location_assignment PIN_H5 -to Output2[2]
-set_location_assignment PIN_H4 -to Output2[3]
-set_location_assignment PIN_G3 -to Output2[4]
-set_location_assignment PIN_D2 -to Output2[5]
-set_location_assignment PIN_D1 -to Output2[6]
 set_location_assignment PIN_L2 -to RST
 set_global_assignment -name QIP_FILE lpm_constantDATAIN.qip
-set_location_assignment PIN_R22 -to buttonPUSH
-set_location_assignment PIN_U22 -to GENPULSE
-set_location_assignment PIN_R17 -to RST_LED
-set_location_assignment PIN_R20 -to mode0_LED
-set_location_assignment PIN_R19 -to mode1_LED
-set_location_assignment PIN_Y18 -to empty
-set_location_assignment PIN_T18 -to full
 set_global_assignment -name QIP_FILE lpm_compareEMPTY.qip
 set_global_assignment -name QIP_FILE lpm_compareFULL.qip
 set_global_assignment -name QIP_FILE lpm_counterSTACK.qip
@@ -142,50 +112,6 @@ set_global_assignment -name VHDL_FILE add31.vhd
 set_global_assignment -name QIP_FILE lpm_compareRandlength.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE "Lab4-3_TESTBEDWAVE.vwf"
 set_global_assignment -name VHDL_FILE g54_computer_playerFSM.vhd
-set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to clk -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to ADDR[0] -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to ADDR[1] -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to ADDR[2] -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to ADDR[3] -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to ADDR[4] -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to ADDR[5] -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to RST -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to buttonPUSH -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to mode[0] -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to mode[1] -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to ADDR[0] -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to ADDR[1] -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to ADDR[2] -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to ADDR[3] -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to ADDR[4] -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to ADDR[5] -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to RST -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to buttonPUSH -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to mode[0] -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to mode[1] -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=10" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=10" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334528" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=51" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=128" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GENERATED=0" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_LOWORD=60077" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=34953" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=128" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1," -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id auto_signaltap_0
 set_global_assignment -name VECTOR_WAVEFORM_FILE computer_player_wave.vwf
 set_global_assignment -name VHDL_FILE g54_sysController_FSM.vhd
 set_global_assignment -name BDF_FILE g54_fullGameTestbed.bdf
@@ -195,9 +121,6 @@ set_global_assignment -name QIP_FILE stackMUX.qip
 set_global_assignment -name QIP_FILE compStackCycle.qip
 set_global_assignment -name QIP_FILE compCounter.qip
 set_global_assignment -name QIP_FILE dealerRequest.qip
-set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name QIP_FILE dealCounter.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE finalTestbedWAVE.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE finalTestbedWAVE2.vwf
@@ -206,6 +129,53 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE finalTestbedWAVE4.vwf
 set_global_assignment -name QIP_FILE playerMODEMUX.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE finalTestbedWAVE5.vwf
 set_global_assignment -name QIP_FILE dealCountCompare.qip
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "P:/DSD-Labs/g54_Lab3/finalTestbedWAVE5.vwf"
 set_global_assignment -name SLD_FILE "P:/DSD-Labs/g54_Lab3/output_files/g54_stack52_testbed_auto_stripped.stp"
+set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "P:/DSD-Labs/g54_Lab3/finalTestbedWAVE5.vwf"
+set_location_assignment PIN_L22 -to player_mode[0]
+set_location_assignment PIN_L21 -to player_mode[1]
+set_location_assignment PIN_M1 -to playerADDR[5]
+set_location_assignment PIN_M2 -to playerADDR[4]
+set_location_assignment PIN_U11 -to playerADDR[3]
+set_location_assignment PIN_U12 -to playerADDR[2]
+set_location_assignment PIN_W12 -to playerADDR[1]
+set_location_assignment PIN_E12 -to playerADDR[0]
+set_location_assignment PIN_R22 -to playerButton
+set_location_assignment PIN_F4 -to pileSuit[0]
+set_location_assignment PIN_D5 -to pileSuit[1]
+set_location_assignment PIN_D6 -to pileSuit[2]
+set_location_assignment PIN_J4 -to pileSuit[3]
+set_location_assignment PIN_L8 -to pileSuit[4]
+set_location_assignment PIN_F3 -to pileSuit[5]
+set_location_assignment PIN_D4 -to pileSuit[6]
+set_location_assignment PIN_G5 -to pileFace[0]
+set_location_assignment PIN_G6 -to pileFace[1]
+set_location_assignment PIN_C2 -to pileFace[2]
+set_location_assignment PIN_C1 -to pileFace[3]
+set_location_assignment PIN_E3 -to pileFace[4]
+set_location_assignment PIN_E4 -to pileFace[5]
+set_location_assignment PIN_D3 -to pileFace[6]
+set_location_assignment PIN_E1 -to playerSuit[0]
+set_location_assignment PIN_H6 -to playerSuit[1]
+set_location_assignment PIN_H5 -to playerSuit[2]
+set_location_assignment PIN_H4 -to playerSuit[3]
+set_location_assignment PIN_G3 -to playerSuit[4]
+set_location_assignment PIN_D2 -to playerSuit[5]
+set_location_assignment PIN_D1 -to playerSuit[6]
+set_location_assignment PIN_J2 -to playerFace[0]
+set_location_assignment PIN_J1 -to playerFace[1]
+set_location_assignment PIN_H2 -to playerFace[2]
+set_location_assignment PIN_H1 -to playerFace[3]
+set_location_assignment PIN_F2 -to playerFace[4]
+set_location_assignment PIN_F1 -to playerFace[5]
+set_location_assignment PIN_E2 -to playerFace[6]
+set_location_assignment PIN_R20 -to playerEmpty
+set_location_assignment PIN_D12 -to CLK
+set_location_assignment PIN_R17 -to turn
+set_location_assignment PIN_T18 -to dealerRequestIN
+set_location_assignment PIN_Y21 -to mode1LED
+set_location_assignment PIN_Y22 -to mode0LED
+set_location_assignment PIN_R18 -to rulesOUT
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

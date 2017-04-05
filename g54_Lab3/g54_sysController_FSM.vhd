@@ -11,7 +11,7 @@ USE ieee.numeric_std.all;
 entity g54_sysController_FSM is
 port (Clk : in std_logic;
 		RST: in std_logic;
-		CNT: in std_logic_vector (3 downto 0);
+		CNT: in std_logic_vector (2 downto 0);
 		stack_en: in std_logic;
 		player_empty: in std_logic;
 		comp_empty: in std_logic;
@@ -57,11 +57,11 @@ begin
 
 		when DEAL_COMP =>
 
-			if CNT > "0111" then state <= DEAL_PLAYER; end if;
+			if CNT > "011" then state <= DEAL_PLAYER; end if;
 
 		when DEAL_PLAYER =>
 
-			if CNT = "0000" then state <= DEAL_1ST_CARD; end if;
+			if CNT = "000" then state <= DEAL_1ST_CARD; end if;
 			
 		when DEAL_1ST_CARD =>
 
@@ -122,14 +122,14 @@ begin
 
 			when DEAL_COMP => 
 				TURN <= '0';
-				start <= '0';
+				start <= '1';
 				deal <= '1';
 				d_turn <= '1';
 				init_dealer <= '0';				
 
 			when DEAL_PLAYER => 
 				TURN <= '0';
-				start <= '0';
+				start <= '1';
 				deal <= '1';
 				d_turn <= '0';
 				init_dealer <= '0';
