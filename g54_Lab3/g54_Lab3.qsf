@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C20F484C7
-set_global_assignment -name TOP_LEVEL_ENTITY g54_computer_playerFSM
+set_global_assignment -name TOP_LEVEL_ENTITY g54_sysController_FSM
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:19:15  FEBRUARY 20, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -142,9 +142,6 @@ set_global_assignment -name VHDL_FILE add31.vhd
 set_global_assignment -name QIP_FILE lpm_compareRandlength.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE "Lab4-3_TESTBEDWAVE.vwf"
 set_global_assignment -name VHDL_FILE g54_computer_playerFSM.vhd
-set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to clk -section_id auto_signaltap_0
@@ -190,6 +187,14 @@ set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id auto_signaltap_0
 set_global_assignment -name VECTOR_WAVEFORM_FILE computer_player_wave.vwf
-set_global_assignment -name SLD_FILE "P:/DSD-Labs/g54_Lab3/output_files/g54_stack52_testbed_auto_stripped.stp"
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "P:/DSD-Labs/g54_Lab3/computer_player_wave.vwf"
+set_global_assignment -name VHDL_FILE g54_sysController_FSM.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name BDF_FILE g54_fullGameTestbed.bdf
+set_global_assignment -name QIP_FILE playerMUX.qip
+set_global_assignment -name QIP_FILE enableMUX.qip
+set_global_assignment -name QIP_FILE stackMUX.qip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SLD_FILE "P:/DSD-Labs/g54_Lab3/output_files/g54_stack52_testbed_auto_stripped.stp"
