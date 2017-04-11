@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version"
 
-// DATE "04/05/2017 17:23:56"
+// DATE "04/11/2017 18:25:42"
 
 // 
 // Device: Altera EP2C20F484C7 Package FBGA484
@@ -5364,216 +5364,6 @@ cycloneii_lcell_ff \inst29|inst|inst5|LPM_COUNTER_component|auto_generated|count
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\inst29|inst|inst5|LPM_COUNTER_component|auto_generated|safe_q [1]));
-
-// Location: M4K_X41_Y18
-cycloneii_ram_block \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 (
-	.portawe(gnd),
-	.portaaddrstall(gnd),
-	.portbrewe(vcc),
-	.portbaddrstall(gnd),
-	.clk0(\CLK~clkctrl_outclk ),
-	.clk1(gnd),
-	.ena0(vcc),
-	.ena1(vcc),
-	.clr0(gnd),
-	.clr1(gnd),
-	.portadatain(36'b000000000000000000000000000000000000),
-	.portaaddr({\playerADDR~combout [5],\playerADDR~combout [4],\playerADDR~combout [3],\playerADDR~combout [2],\playerADDR~combout [1],\playerADDR~combout [0]}),
-	.portabyteenamasks(1'b1),
-	.portbdatain(36'b000000000000000000000000000000000000),
-	.portbaddr(6'b000000),
-	.portbbyteenamasks(1'b1),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.portadataout(\inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus ),
-	.portbdataout());
-// synopsys translate_off
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .data_interleave_offset_in_bits = 1;
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .init_file = "P:\DSD-Labs\g54_Lab3\g54_pop_enable.mif";
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .init_file_layout = "port_a";
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .logical_ram_name = "g54_stackTestBed:inst29|g54_stack52:inst2|g54_pop_enable:inst28|lpm_rom:crc_table|altrom:srom|altsyncram:rom_block|altsyncram_lk21:auto_generated|ALTSYNCRAM";
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .operation_mode = "rom";
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_address_clear = "none";
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_address_width = 6;
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_byte_enable_clear = "none";
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_byte_enable_clock = "none";
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_in_clear = "none";
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_out_clear = "none";
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_out_clock = "none";
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_width = 36;
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_first_address = 0;
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_first_bit_number = 0;
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_last_address = 63;
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_logical_ram_depth = 64;
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_logical_ram_width = 52;
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_write_enable_clear = "none";
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_write_enable_clock = "none";
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_b_address_width = 6;
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_b_data_width = 36;
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .ram_block_type = "M4K";
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .safe_write = "err_on_2clk";
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .mem_init1 = 256'h0000000000000000000000000000000000000000000000000000000000000000;
-defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .mem_init0 = 2048'h00000000000000000000000000000000000000000000800000000C00000000E00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F80000000FC0000000FE0000000FF0000000FF8000000FFC000000FFE000000FFF000000FFF800000FFFC00000FFFE00000FFFF00000FFFF80000FFFFC0000FFFFE0000FFFFF0000FFFFF8000FFFFFC000FFFFFE000FFFFFF000FFFFFF800FFFFFFC00FFFFFFE00FFFFFFF00FFFFFFF80FFFFFFFC0FFFFFFFE0FFFFFFFF0FFFFFFFF8FFFFFFFFCFFFFFFFFEFFFFFFFFF;
-// synopsys translate_on
-
-// Location: M4K_X17_Y14
-cycloneii_ram_block \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 (
-	.portawe(gnd),
-	.portaaddrstall(gnd),
-	.portbrewe(vcc),
-	.portbaddrstall(gnd),
-	.clk0(\CLK~clkctrl_outclk ),
-	.clk1(gnd),
-	.ena0(vcc),
-	.ena1(vcc),
-	.clr0(gnd),
-	.clr1(gnd),
-	.portadatain(36'b000000000000000000000000000000000000),
-	.portaaddr({\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [5],\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [4],\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [3],\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [2],
-\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [1],\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [0]}),
-	.portabyteenamasks(1'b1),
-	.portbdatain(36'b000000000000000000000000000000000000),
-	.portbaddr(6'b000000),
-	.portbbyteenamasks(1'b1),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.portadataout(\inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus ),
-	.portbdataout());
-// synopsys translate_off
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .data_interleave_offset_in_bits = 1;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .init_file = "P:\DSD-Labs\g54_Lab3\g54_pop_enable.mif";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .init_file_layout = "port_a";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .logical_ram_name = "g54_stack52:inst16|g54_pop_enable:inst28|lpm_rom:crc_table|altrom:srom|altsyncram:rom_block|altsyncram_lk21:auto_generated|ALTSYNCRAM";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .operation_mode = "rom";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_address_clear = "none";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_address_width = 6;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_byte_enable_clear = "none";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_byte_enable_clock = "none";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_in_clear = "none";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_out_clear = "none";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_out_clock = "none";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_width = 36;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_first_address = 0;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_first_bit_number = 0;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_last_address = 63;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_logical_ram_depth = 64;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_logical_ram_width = 52;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_write_enable_clear = "none";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_write_enable_clock = "none";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_b_address_width = 6;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_b_data_width = 36;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .ram_block_type = "M4K";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .safe_write = "err_on_2clk";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .mem_init1 = 256'h0000000000000000000000000000000000000000000000000000000000000000;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .mem_init0 = 2048'h00000000000000000000000000000000000000000000800000000C00000000E00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F80000000FC0000000FE0000000FF0000000FF8000000FFC000000FFE000000FFF000000FFF800000FFFC00000FFFE00000FFFF00000FFFF80000FFFFC0000FFFFE0000FFFFF0000FFFFF8000FFFFFC000FFFFFE000FFFFFF000FFFFFF800FFFFFFC00FFFFFFE00FFFFFFF00FFFFFFF80FFFFFFFC0FFFFFFFE0FFFFFFFF0FFFFFFFF8FFFFFFFFCFFFFFFFFEFFFFFFFFF;
-// synopsys translate_on
-
-// Location: M4K_X17_Y13
-cycloneii_ram_block \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 (
-	.portawe(gnd),
-	.portaaddrstall(gnd),
-	.portbrewe(vcc),
-	.portbaddrstall(gnd),
-	.clk0(\CLK~clkctrl_outclk ),
-	.clk1(gnd),
-	.ena0(vcc),
-	.ena1(vcc),
-	.clr0(gnd),
-	.clr1(gnd),
-	.portadatain(16'b0000000000000000),
-	.portaaddr({\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [5],\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [4],\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [3],\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [2],
-\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [1],\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [0]}),
-	.portabyteenamasks(1'b1),
-	.portbdatain(16'b0000000000000000),
-	.portbaddr(6'b000000),
-	.portbbyteenamasks(1'b1),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.portadataout(\inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32_PORTADATAOUT_bus ),
-	.portbdataout());
-// synopsys translate_off
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .data_interleave_offset_in_bits = 1;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .data_interleave_width_in_bits = 1;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .init_file = "P:\DSD-Labs\g54_Lab3\g54_pop_enable.mif";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .init_file_layout = "port_a";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .logical_ram_name = "g54_stack52:inst16|g54_pop_enable:inst28|lpm_rom:crc_table|altrom:srom|altsyncram:rom_block|altsyncram_lk21:auto_generated|ALTSYNCRAM";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .operation_mode = "rom";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_address_clear = "none";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_address_width = 6;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_byte_enable_clear = "none";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_byte_enable_clock = "none";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_data_in_clear = "none";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_data_out_clear = "none";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_data_out_clock = "none";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_data_width = 16;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_first_address = 0;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_first_bit_number = 32;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_last_address = 63;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_logical_ram_depth = 64;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_logical_ram_width = 52;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_write_enable_clear = "none";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_write_enable_clock = "none";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_b_address_width = 6;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_b_data_width = 16;
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .ram_block_type = "M4K";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .safe_write = "err_on_2clk";
-defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .mem_init0 = 1024'h00000000000000000000000000000000000000000000000000000000000000008000C000E000F000F800FC00FE00FF00FF80FFC0FFE0FFF0FFF8FFFCFFFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF;
-// synopsys translate_on
-
-// Location: M4K_X17_Y18
-cycloneii_ram_block \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 (
-	.portawe(gnd),
-	.portaaddrstall(gnd),
-	.portbrewe(vcc),
-	.portbaddrstall(gnd),
-	.clk0(\CLK~clkctrl_outclk ),
-	.clk1(gnd),
-	.ena0(vcc),
-	.ena1(vcc),
-	.clr0(gnd),
-	.clr1(gnd),
-	.portadatain(36'b000000000000000000000000000000000000),
-	.portaaddr({\inst13|adder16_inst|LPM_ADD_SUB_component|auto_generated|result[15]~30_combout ,\inst13|adder16_inst|LPM_ADD_SUB_component|auto_generated|result[14]~28_combout ,\inst13|adder16_inst|LPM_ADD_SUB_component|auto_generated|result[13]~26_combout ,
-\inst13|adder16_inst|LPM_ADD_SUB_component|auto_generated|result[12]~24_combout ,\inst13|adder16_inst|LPM_ADD_SUB_component|auto_generated|result[11]~22_combout ,\inst13|adder16_inst|LPM_ADD_SUB_component|auto_generated|result[10]~20_combout }),
-	.portabyteenamasks(1'b1),
-	.portbdatain(36'b000000000000000000000000000000000000),
-	.portbaddr(6'b000000),
-	.portbbyteenamasks(1'b1),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.portadataout(\inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus ),
-	.portbdataout());
-// synopsys translate_off
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .data_interleave_offset_in_bits = 1;
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .init_file = "P:\DSD-Labs\g54_Lab3\g54_pop_enable.mif";
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .init_file_layout = "port_a";
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .logical_ram_name = "g54_stack52:inst7|g54_pop_enable:inst28|lpm_rom:crc_table|altrom:srom|altsyncram:rom_block|altsyncram_lk21:auto_generated|ALTSYNCRAM";
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .operation_mode = "rom";
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_address_clear = "none";
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_address_width = 6;
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_byte_enable_clear = "none";
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_byte_enable_clock = "none";
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_in_clear = "none";
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_out_clear = "none";
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_out_clock = "none";
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_width = 36;
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_first_address = 0;
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_first_bit_number = 0;
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_last_address = 63;
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_logical_ram_depth = 64;
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_logical_ram_width = 52;
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_write_enable_clear = "none";
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_write_enable_clock = "none";
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_b_address_width = 6;
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_b_data_width = 36;
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .ram_block_type = "M4K";
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .safe_write = "err_on_2clk";
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .mem_init1 = 256'h0000000000000000000000000000000000000000000000000000000000000000;
-defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .mem_init0 = 2048'h00000000000000000000000000000000000000000000800000000C00000000E00000000F00000000F80000000FC0000000FE0000000FF0000000FF8000000FFC000000FFE000000FFF000000FFF800000FFFC00000FFFE00000FFFF00000FFFF80000FFFFC0000FFFFE0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF8000FFFFFC000FFFFFE000FFFFFF000FFFFFF800FFFFFFC00FFFFFFE00FFFFFFF00FFFFFFF80FFFFFFFC0FFFFFFFE0FFFFFFFF0FFFFFFFF8FFFFFFFFCFFFFFFFFEFFFFFFFFF;
-// synopsys translate_on
 
 // Location: LCCOMB_X33_Y18_N10
 cycloneii_lcell_comb \inst29|inst|inst5|LPM_COUNTER_component|auto_generated|counter_comb_bita1 (
@@ -13587,6 +13377,216 @@ cycloneii_lcell_comb \inst7|inst102|dffs[3]~feeder (
 // synopsys translate_off
 defparam \inst7|inst102|dffs[3]~feeder .lut_mask = 16'hAAAA;
 defparam \inst7|inst102|dffs[3]~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: M4K_X41_Y18
+cycloneii_ram_block \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 (
+	.portawe(gnd),
+	.portaaddrstall(gnd),
+	.portbrewe(vcc),
+	.portbaddrstall(gnd),
+	.clk0(\CLK~clkctrl_outclk ),
+	.clk1(gnd),
+	.ena0(vcc),
+	.ena1(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain(36'b000000000000000000000000000000000000),
+	.portaaddr({\playerADDR~combout [5],\playerADDR~combout [4],\playerADDR~combout [3],\playerADDR~combout [2],\playerADDR~combout [1],\playerADDR~combout [0]}),
+	.portabyteenamasks(1'b1),
+	.portbdatain(36'b000000000000000000000000000000000000),
+	.portbaddr(6'b000000),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(\inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus ),
+	.portbdataout());
+// synopsys translate_off
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .data_interleave_offset_in_bits = 1;
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .init_file = "P:\DSD-Labs\g54_Lab3\g54_pop_enable.mif";
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .init_file_layout = "port_a";
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .logical_ram_name = "g54_stackTestBed:inst29|g54_stack52:inst2|g54_pop_enable:inst28|lpm_rom:crc_table|altrom:srom|altsyncram:rom_block|altsyncram_lk21:auto_generated|ALTSYNCRAM";
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .operation_mode = "rom";
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_address_clear = "none";
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_address_width = 6;
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_byte_enable_clear = "none";
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_byte_enable_clock = "none";
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_in_clear = "none";
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_out_clear = "none";
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_out_clock = "none";
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_width = 36;
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_first_address = 0;
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_first_bit_number = 0;
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_last_address = 63;
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_logical_ram_depth = 64;
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_logical_ram_width = 52;
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_write_enable_clear = "none";
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_write_enable_clock = "none";
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_b_address_width = 6;
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_b_data_width = 36;
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .ram_block_type = "M4K";
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .safe_write = "err_on_2clk";
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .mem_init1 = 256'h0000000000000000000000000000000000000000000000000000000000000000;
+defparam \inst29|inst2|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .mem_init0 = 2048'h00000000000000000000000000000000000000000000800000000C00000000E00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F80000000FC0000000FE0000000FF0000000FF8000000FFC000000FFE000000FFF000000FFF800000FFFC00000FFFE00000FFFF00000FFFF80000FFFFC0000FFFFE0000FFFFF0000FFFFF8000FFFFFC000FFFFFE000FFFFFF000FFFFFF800FFFFFFC00FFFFFFE00FFFFFFF00FFFFFFF80FFFFFFFC0FFFFFFFE0FFFFFFFF0FFFFFFFF8FFFFFFFFCFFFFFFFFEFFFFFFFFF;
+// synopsys translate_on
+
+// Location: M4K_X17_Y14
+cycloneii_ram_block \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 (
+	.portawe(gnd),
+	.portaaddrstall(gnd),
+	.portbrewe(vcc),
+	.portbaddrstall(gnd),
+	.clk0(\CLK~clkctrl_outclk ),
+	.clk1(gnd),
+	.ena0(vcc),
+	.ena1(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain(36'b000000000000000000000000000000000000),
+	.portaaddr({\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [5],\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [4],\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [3],\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [2],
+\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [1],\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [0]}),
+	.portabyteenamasks(1'b1),
+	.portbdatain(36'b000000000000000000000000000000000000),
+	.portbaddr(6'b000000),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(\inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus ),
+	.portbdataout());
+// synopsys translate_off
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .data_interleave_offset_in_bits = 1;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .init_file = "P:\DSD-Labs\g54_Lab3\g54_pop_enable.mif";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .init_file_layout = "port_a";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .logical_ram_name = "g54_stack52:inst16|g54_pop_enable:inst28|lpm_rom:crc_table|altrom:srom|altsyncram:rom_block|altsyncram_lk21:auto_generated|ALTSYNCRAM";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .operation_mode = "rom";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_address_clear = "none";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_address_width = 6;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_byte_enable_clear = "none";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_byte_enable_clock = "none";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_in_clear = "none";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_out_clear = "none";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_out_clock = "none";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_width = 36;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_first_address = 0;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_first_bit_number = 0;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_last_address = 63;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_logical_ram_depth = 64;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_logical_ram_width = 52;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_write_enable_clear = "none";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_write_enable_clock = "none";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_b_address_width = 6;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_b_data_width = 36;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .ram_block_type = "M4K";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .safe_write = "err_on_2clk";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .mem_init1 = 256'h0000000000000000000000000000000000000000000000000000000000000000;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .mem_init0 = 2048'h00000000000000000000000000000000000000000000800000000C00000000E00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F00000000F80000000FC0000000FE0000000FF0000000FF8000000FFC000000FFE000000FFF000000FFF800000FFFC00000FFFE00000FFFF00000FFFF80000FFFFC0000FFFFE0000FFFFF0000FFFFF8000FFFFFC000FFFFFE000FFFFFF000FFFFFF800FFFFFFC00FFFFFFE00FFFFFFF00FFFFFFF80FFFFFFFC0FFFFFFFE0FFFFFFFF0FFFFFFFF8FFFFFFFFCFFFFFFFFEFFFFFFFFF;
+// synopsys translate_on
+
+// Location: M4K_X17_Y13
+cycloneii_ram_block \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 (
+	.portawe(gnd),
+	.portaaddrstall(gnd),
+	.portbrewe(vcc),
+	.portbaddrstall(gnd),
+	.clk0(\CLK~clkctrl_outclk ),
+	.clk1(gnd),
+	.ena0(vcc),
+	.ena1(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain(16'b0000000000000000),
+	.portaaddr({\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [5],\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [4],\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [3],\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [2],
+\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [1],\inst31|LPM_COUNTER_component|auto_generated|pre_hazard [0]}),
+	.portabyteenamasks(1'b1),
+	.portbdatain(16'b0000000000000000),
+	.portbaddr(6'b000000),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(\inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32_PORTADATAOUT_bus ),
+	.portbdataout());
+// synopsys translate_off
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .data_interleave_offset_in_bits = 1;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .data_interleave_width_in_bits = 1;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .init_file = "P:\DSD-Labs\g54_Lab3\g54_pop_enable.mif";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .init_file_layout = "port_a";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .logical_ram_name = "g54_stack52:inst16|g54_pop_enable:inst28|lpm_rom:crc_table|altrom:srom|altsyncram:rom_block|altsyncram_lk21:auto_generated|ALTSYNCRAM";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .operation_mode = "rom";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_address_clear = "none";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_address_width = 6;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_byte_enable_clear = "none";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_byte_enable_clock = "none";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_data_in_clear = "none";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_data_out_clear = "none";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_data_out_clock = "none";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_data_width = 16;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_first_address = 0;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_first_bit_number = 32;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_last_address = 63;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_logical_ram_depth = 64;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_logical_ram_width = 52;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_write_enable_clear = "none";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_a_write_enable_clock = "none";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_b_address_width = 6;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .port_b_data_width = 16;
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .ram_block_type = "M4K";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .safe_write = "err_on_2clk";
+defparam \inst16|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a32 .mem_init0 = 1024'h00000000000000000000000000000000000000000000000000000000000000008000C000E000F000F800FC00FE00FF00FF80FFC0FFE0FFF0FFF8FFFCFFFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF;
+// synopsys translate_on
+
+// Location: M4K_X17_Y18
+cycloneii_ram_block \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 (
+	.portawe(gnd),
+	.portaaddrstall(gnd),
+	.portbrewe(vcc),
+	.portbaddrstall(gnd),
+	.clk0(\CLK~clkctrl_outclk ),
+	.clk1(gnd),
+	.ena0(vcc),
+	.ena1(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain(36'b000000000000000000000000000000000000),
+	.portaaddr({\inst13|adder16_inst|LPM_ADD_SUB_component|auto_generated|result[15]~30_combout ,\inst13|adder16_inst|LPM_ADD_SUB_component|auto_generated|result[14]~28_combout ,\inst13|adder16_inst|LPM_ADD_SUB_component|auto_generated|result[13]~26_combout ,
+\inst13|adder16_inst|LPM_ADD_SUB_component|auto_generated|result[12]~24_combout ,\inst13|adder16_inst|LPM_ADD_SUB_component|auto_generated|result[11]~22_combout ,\inst13|adder16_inst|LPM_ADD_SUB_component|auto_generated|result[10]~20_combout }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(36'b000000000000000000000000000000000000),
+	.portbaddr(6'b000000),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(\inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus ),
+	.portbdataout());
+// synopsys translate_off
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .data_interleave_offset_in_bits = 1;
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .init_file = "P:\DSD-Labs\g54_Lab3\g54_pop_enable.mif";
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .init_file_layout = "port_a";
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .logical_ram_name = "g54_stack52:inst7|g54_pop_enable:inst28|lpm_rom:crc_table|altrom:srom|altsyncram:rom_block|altsyncram_lk21:auto_generated|ALTSYNCRAM";
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .operation_mode = "rom";
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_address_clear = "none";
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_address_width = 6;
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_byte_enable_clear = "none";
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_byte_enable_clock = "none";
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_in_clear = "none";
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_out_clear = "none";
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_out_clock = "none";
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_data_width = 36;
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_first_address = 0;
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_first_bit_number = 0;
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_last_address = 63;
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_logical_ram_depth = 64;
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_logical_ram_width = 52;
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_write_enable_clear = "none";
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_a_write_enable_clock = "none";
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_b_address_width = 6;
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .port_b_data_width = 36;
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .ram_block_type = "M4K";
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .safe_write = "err_on_2clk";
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .mem_init1 = 256'h0000000000000000000000000000000000000000000000000000000000000000;
+defparam \inst7|inst28|crc_table|srom|rom_block|auto_generated|ram_block1a0 .mem_init0 = 2048'h00000000000000000000000000000000000000000000800000000C00000000E00000000F00000000F80000000FC0000000FE0000000FF0000000FF8000000FFC000000FFE000000FFF000000FFF800000FFFC00000FFFE00000FFFF00000FFFF80000FFFFC0000FFFFE0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF0000FFFFF8000FFFFFC000FFFFFE000FFFFFF000FFFFFF800FFFFFFC00FFFFFFE00FFFFFFF00FFFFFFF80FFFFFFFC0FFFFFFFE0FFFFFFFF0FFFFFFFF8FFFFFFFFCFFFFFFFFEFFFFFFFFF;
 // synopsys translate_on
 
 // Location: LCCOMB_X24_Y16_N28
